@@ -10,6 +10,7 @@ import SignUp from "./Components/SignUp/SignUp.jsx";
 import AuthProvider from "./Components/Provider/AuthProvider.jsx";
 import Users from "./Components/Users/Users.jsx";
 import LayOut from "./Components/LayOut/LayOut.jsx";
+import NotFound from "./Components/Error-Page/NotFound.jsx";
 
 
 
@@ -17,6 +18,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <LayOut></LayOut>,
+    errorElement: <NotFound/>,
     children: [
       {
         path: "/",
